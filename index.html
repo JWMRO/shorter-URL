@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale = 1.0>
+    <title>短網址產生器</title>
+    <link> rel = "stylesheet" href = https://pyscript.net/releases/2026.7.3/core.css
+    <script type="module" src = https://pyscript.net/releases/2026.7.3/core.js></script>
+
+</head>
+<body>
+    <h1>短網址產生器</h1>
+
+    <p class = "note">資料將存在你的本機瀏覽器中</p>
+    <input type = "text" id = "url" name = "url" placeholder = "請輸入網址 如: https://example.com" required>
+    <button type = "submit" id = "shorten-btn">產生短網址</button>
+
+    <div id = "result" style = "display: none;">
+        <p>你的短網址：</p>
+        <input type = "text" id = "short-url" readonly>
+        <button id = "copy-btn">複製</button>
+    </div>
+
+    <div id = "history" style = "display: none;">
+        <h2>歷史紀錄</h2>
+        <ul id = "history-list"></ul>
+    </div>
+
+
+    <>script type = "py" src = "./main.py" config = "./pyscript.json"></script>
+</body>
